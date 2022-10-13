@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación web </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Hola ≧◉◡◉≦</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contac</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Moon Light</h2>
+        <a href="#sec" id="btn">Explore </a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec"> 
+        <h2>Cafune- Tek it ʕ•ᴥ•ʔ </h2>
+        <p>Where did you learn what it means to reciprocate?
+            And how much can I be expected to tolerate? Uh
+            So I started to think 'bout the plans I made
+            The debt unpaid
+            And you just can't call a spade a spade
+            I watch the moon
+            Let it run my mood
+            Can't stop thinking of you
+            I watch you (now I let it go)
+            (And I watch as things play out like)
+            So long nice to know you I'll be moving on
+            We started off in such a nice place
+            We were talking the same language
+            I open and I'm closing
+            You can't stand the thought
+            Of a real beating heart
+            You'd be holding, having trouble
+            Owning and admit that I am hoping
+            I watch the moon
+            Let it run my mood
+            Can't stop thinking of you
+            I watch you (now I let it go)
+            (And I watch as things play out like)
+            So long nice to know you I'll be moving on
+            Moving on
+            You, yeah I always know the truth
+            But I can't just say it to you
+            Yeah, I know the truth
+            I knew
+            Yeah, I always know the truth
+            But I can't just say it to you
+            Yeah, I know the truth
+            I never thought we'd see it through
+            I never could rely on you
+            And few times your face came into view
+            Into view
+            I'm not into you <br><br>
+            Into you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi nemo distinctio. Illum, doloribus similique! Quaerat quia dolorem velit. Doloremque, assumenda quasi odit dolore impedit ullam blanditiis nobis aperiam doloribus?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti eum maiores amet voluptatum, eos consequuntur inventore, quae aperiam fuga fugiat aliquid officia quos. Odit, pariatur delectus cum alias expedita est!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero aliquid incidunt saepe ratione enim mollitia, recusandae earum cum? Corrupti, magnam ex nemo maiores architecto nulla distinctio dicta voluptatibus repudiandae et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, reiciendis? Cum sit maxime, inventore perferendis debitis soluta reprehenderit excepturi ex reiciendis error? Veritatis voluptatum, doloremque quasi voluptatibus quae doloribus reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sint ipsam itaque voluptatibus excepturi illum nulla vitae odit ducimus dolorum ab, consectetur ea quos quae maiores obcaecati omnis, enim voluptatem! <br><br>
+            Into you. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi nemo distinctio. Illum, doloribus similique! Quaerat quia dolorem velit. Doloremque, assumenda quasi odit dolore impedit ullam blanditiis nobis aperiam doloribus?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti eum maiores amet voluptatum, eos consequuntur inventore, quae aperiam fuga fugiat aliquid officia quos. Odit, pariatur delectus cum alias expedita est!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero aliquid incidunt saepe ratione enim mollitia, recusandae earum cum? Corrupti, magnam ex nemo maiores architecto nulla distinctio dicta voluptatibus repudiandae et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, reiciendis? Cum sit maxime, inventore perferendis debitis soluta reprehenderit excepturi ex reiciendis error? Veritatis voluptatum, doloremque quasi voluptatibus quae doloribus reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sint ipsam itaque voluptatibus excepturi illum nulla vitae odit ducimus dolorum ab, consectetur ea quos quae maiores obcaecati omnis, enim voluptatem! <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam possimus commodi aspernatur placeat, incidunt distinctio hic quo voluptatem quia veniam voluptate voluptatum sapiente maiores laboriosam ratione, quasi cupiditate. Soluta, quaerat?. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia repudiandae quidem, ipsa quaerat quo suscipit dignissimos voluptate molestias. Suscipit architecto ipsam sint in inventore. Dicta repellendus molestiae sunt itaque enim?. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quae rem temporibus ea, sequi porro reprehenderit fugiat sapiente a in consequuntur doloribus unde dignissimos veritatis sit cum dolor illo nobis. <br><br></p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars'); 
+        let moon = document.getElementById('moon'); 
+        let mountains_behind = document.getElementById('mountains_behind'); 
+        let text = document.getElementById('text'); 
+        let btn = document.getElementById('btn'); 
+        let mountains_front = document.getElementById('mountains_front'); 
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY ;
+            stars.style.left = value * 0.25 + 'px' ;
+            moon.style.top = value * 1.05 + 'px' ;
+            mountains_behind.style.top = value * 0.5 + 'px' ;
+            mountains_front.style.top = value * 0 + 'px' ;
+            text.style.marginRight = value * 4 + 'px' ;
+            text.style.marginTop = value * 1.5 + 'px' ;
+            btn.style.marginTop = value * 1.5 + 'px' ;
+            header.style.top = value *0.5 + 'px';
+        })
+    </script>
+</body>
+</html> 
